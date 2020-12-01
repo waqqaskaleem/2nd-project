@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.btn{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    background-color: crimson;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    justify-content: center;
+     align-items: center;
+     text-align: center;
+     border-radius: 15px;
+    
+     transition: 0.5s ease;
+     font-weight: 600;
+}
+ .btn:hover{
+    letter-spacing: .4rem;
+}
+
+/* nav section start */
+header{
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: .5s;
+}
+header .logo{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+header .logo span{
+    color:rgb(240, 184, 184);
+    letter-spacing: .2rem;
+}
+header .nav{
+    position: relative;
+    display: flex;
+}
+header .nav li{
+    list-style: none;
+    margin-left: 30px;
+    text-decoration: none;
+}
+header .nav li a{
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    text-decoration: none;
+}
+header .nav li a:hover{
+    color:rgb(240, 184, 184);
+
+
+}
+header.sticky .nav li a:hover{
+    color: rgb(202, 108, 108);
+
+
+}
+header.sticky {
+    padding: 10px 100px;
+    background-color:white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+}
+header.sticky .logo{
+    color: black;
+}
+header.sticky .logo span{
+    color: rgb(202, 108, 108);
+}
+header.sticky .nav li a{
+    color: black;
+    font-weight: 700;
+}
+
+
+/* nav section end */
+
+/* slide section strt */
+.banner{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background: url(./images/bg.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner p{
+    font-weight: 500;
+    font-family: 'poppins',sans-serif;
+    color: rgb(240, 184, 184);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    
+}
+.banner .content{
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+}
+.banner .content h2{
+    font-size: 4.7rem;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    text-transform: uppercase;
+}
+
+.banner .btn{
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    
+    letter-spacing: 2px;
+    margin-top: 20px;
+    justify-content: center;
+     align-items: center;
+     text-align: center;
+     border-radius: 20px;
+     border: 2px solid white;
+     transition: 0.5s ease;
+     font-family: 'Poppins';
+     font-weight: 600;
+     
+}
+.banner .btn:hover{
+    background-color: rgb(240, 184, 184);
+    letter-spacing: .3rem;
+    border: 3px solid black;
+    color: black;
+    font-weight: 1000;
+}
+/* slide section end */
+
+/* about section :start */
+section{
+    padding: 100px;
+
+}
+.row{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.row .col50{
+    position: relative;
+width: 48%;
+}
+.title{
+font-size: 2rem;
+color: black;
+font-weight: 400;
+}
+.title span{
+    color: crimson;
+    font-size: 4rem;
+    font-weight: 1000;
+}
+.row p{
+    color: black;
+    font-weight: 300;
+}
+.row .col50 .imag{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col50 .imag img{
+position: absolute;
+top: 0;
+left: 0;
+object-fit: cover;
+width: 100%;
+height: 100%;
+
+}
+.titles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+width: 300px;
+margin: 20px;
+border: 15px solid white;
+box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+}
+.menu .content .box .imag{
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+.menu .content .box .imag img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.menu .content .box .text{
+    padding: 15px 0 5px;
+}
+.menu .text h3{
+font-weight: 400;
+color: black;
+text-align: center;
+}
+
+
+/* about section end */
+
+
+
+/* expert section start  */
+.expert .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.expert .content .box{
+width: 200px;
+margin: 15px;
+}
+.expert .content .box .imag{
+position: relative;
+width: 100%;
+height: 300px;
+}
+
+.expert .content .box .imag img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.expert .content .box .text{
+    padding: 15px 0 5px;
+}
+.expert .text h3{
+font-weight: 400;
+color: black;
+text-align: center;
+}
+
+
+/* expert section end  */
+
+
+
+
+/* testimonials section strt */
+.Testimonials{
+    background: url(./images/bg2.jpg);
+    background-size: cover;
+}
+.white .title,
+.white p{
+    color: white;
+}
+
+.Testimonials .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.Testimonials .content .box{
+width: 300px;
+margin: 20px;
+padding: 40px;
+background: white;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+.Testimonials .content .box .imag{
+position: relative;
+width: 80px;
+height: 80px;
+overflow: hidden;
+margin-bottom: 20px;
+border-radius: 50%;
+}
+
+.Testimonials .content .box .imag img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+}
+.Testimonials .content .box .text{
+   text-align: center;
+}
+.Testimonials .content .box .text p{
+   color: #666;
+   font-style: italic;
+}
+
+.Testimonials .content .box .text h3{
+    color: #111;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: crimson;
+    font-weight: 600;
+ }
+
+/* testimonials section end */
+
+/* contact section start */
+
+
+.contact{
+    background: url(./images/bg3.jpg);
+    background-size: cover;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: white;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+color: black;
+font-size: 1.5rem;
+margin-bottom: 20px;
+font-weight: 500;
+}
+.contactForm .inputBox{
+position: relative;
+width: 100%;
+margin-bottom: 20px;
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+width: 100%;
+border: 1px solid #555;
+padding: 10px;
+color: black;
+outline: none;
+font-size: 16px;
+font-weight: 300;
+resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]
+{
+    font-size: 1rem;
+    color: white;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+/* contact section end */
+
+/* last section strt */
+.copyrightText{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyrightText p{
+color: #333;
+}
+.copyrightText a{
+color: #ff0157;
+font-weight: 700;
+text-decoration: none;
+}
+
+/* last section end */
+/* for responsive */
+@media (max-width: 991px)
+{
+    header,
+    header.sticky{
+padding: 10px 20px;
+    }
+    header .nav{
+        display: none;
+    }
+    header .nav.active{
+        width: 100%;
+        height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+
+    }
+    header .nav li{
+        margin-left: 0;
+    }
+    header .nav li a{
+    color: black;
+    font-size: 1.5rem;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./images/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+    background: url(./images/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 3rem;
+        color: white;
+    }
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col50 {
+       position: relative;
+       width: 100%;
+    }
+    
+    .row .col50 .imag {
+       height: 300px;
+       margin-top: 20px;
+     }
+     .menu .content {
+         margin-top: 20px;
+     }
+     .menu .content .box {
+    margin: 10px; 
+    }
+    .menu .content .box .imag {
+    height: 260px;
+    }
+    .titles{
+        text-align: center;
+    }
+    .title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .testimonials .content .box{
+        margin: 10px;
+        padding: 20px;
+    }
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 480px)
+{
+    .banner .content h2
+    {
+        font-size: 2.2rem;
+        color: white;
+        text-align: center;
+    }
+    .banner .content p{
+        text-align: center;
+    }
+    .banner .content .btn a{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
